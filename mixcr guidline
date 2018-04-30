@@ -1,0 +1,13 @@
+how to use mixcr
+cd #mac当前路径
+cd/system/user/... #更改路径
+ls #列出当前路径下文件
+mixcr #调用mixcr程序
+mixcr align 文件.R1.fastq.gz 文件.R2.fastq.gz 文件名.vdjca #将文件1和文件2 align 到 文件.vdjca
+# 举例 mixcr align SHPTCL6-B-Dup2_S71_L001_R1_001.fastq.gz SHPTCL6-B-Dup2_S71_L001_R2_001.fastq.gz ptcl44_dup2.vdjca	
+mixcr exportAlignments 文件.vdjca 文件.align.txt #将align的文件export出来到align.txt
+# 举例mixcr exportAlignments ptcl44_dup2.vdjca ptcl44_dup2-align.txt	
+mixcr assemble -r 文件.log.txt 文件.vdjca 文件.clns #-r 写入日志文件；将align的文件（文件.vdjca）assemble到（文件.cln）
+#举例 mixcr assemble -r ptcl44_dup2-log.txt ptcl44_dup2.vdjca ptcl44_dup2.clns	
+mixcr exportClones 文件.clns 文件-cln.txt #将cln文件转换为txt文件 （文件.cln 到 文件-cln.txt）
+#举例 mixcr exportClones ptcl44_dup2.clns ptcl44_dup2-cln.txt
