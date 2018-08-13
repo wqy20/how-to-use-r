@@ -1,2 +1,3 @@
 IGV CAPITALIZED NUCLEOTIDE MEANING
+https://biology.stackexchange.com/questions/45275/significance-of-upper-case-lower-case-and-ns-in-ucsc-dna-files
 Repeats from RepeatMasker and Tandem Repeats Finder (with period of 12 or less) are shown in lower case; non-repeating sequence is shown in upper case." This is the relevant passage in the README.txt file. As described in one of the answers, in the IUPAC symbol table for referring to nucleotide bases, where the most common ones are ACGT and U (typically in RNA), the 'N' symbol is used to either represent a base in a sequence motif pattern where any of the 4 may be found, OR in a sequencing run, a base position where the actual base could not be unambiguously determined.
